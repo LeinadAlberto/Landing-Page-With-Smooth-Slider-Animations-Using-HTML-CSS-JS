@@ -29,7 +29,21 @@ const linkAction = () => {
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
 /*=============== SWIPER HOME ===============*/
+const swiperHome = new Swiper('.home__swiper', {
+   loop: true, 
+   effect: 'fade', 
+   parallax: true, 
+   speed: 1000, 
+   grabCursor: true, 
 
+   pagination: {
+      el: '.swiper-pagination',
+   },
+   /* autoplay: {
+      delay: 5000, 
+      disableOnInteraction: false,
+   } */
+})
 
 /*=============== GSAP ANIMATION ===============*/
   
